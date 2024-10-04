@@ -1,6 +1,5 @@
 package lotto;
 
-import lotto.domain.Game;
 import lotto.view.InputView;
 import lotto.view.OutputView;
 
@@ -10,6 +9,6 @@ public class Application {
         InputView inputView = new InputView();
         OutputView outputView = new OutputView();
 
-        new Game(inputView.InputLottoPrice());
+        new Game(inputView.InputLottoPrice(),inputView.InputBonusNumber());
     }
 }
